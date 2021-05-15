@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <h1>Welcome to Forecasting Solar Energy Production with Weather data</h1>
+
+      <h3>Enter the form data </h3>
+
+      <div class="container">
+
+
+    <form action="{% url 'result' %}" class="container">
+    {% csrf_token %}
+
+    Solar Zenith Angle:<input type="number" required name="Solar Zenith Angle"> <hr> <br>
+    Wind Direction:<input type="number" required name="Wind Direction"> <hr> <br>
+    Relative Humidity:<input type="number" required name="Relative Humidity"> <hr> <br>
+    Temperature:<input type="number" required name="Temperature"> <hr> <br>
+    Cloud Type:<input type="number" required name="Cloud Type"> <hr> <br>
+    Wind Speed:<input type="number" required name="Wind Speed"> <hr> <br>
+
+    <input type="submit" name="" value="submit">
+
+    </form>
+
+  </div>
+
+
+  </body>
+</html>
